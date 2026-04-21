@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon's 3.5% FBA Surcharge Went Live April 17th — VASO Group</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --violet:#282431;--violet2:#1e1b28;--violet3:#332e42;
+  --orange:#F69679;--orange2:#f8a992;--peach:#F3D4CD;
+  --teal:#429A95;--wine:#A35076;--white:#FAFAFA;
+  --white2:#e8e4f0;--gray:#9490a8;--font:'Plus Jakarta Sans',sans-serif;
+}
+html{scroll-behavior:smooth;}
+body{font-family:var(--font);background:var(--white);color:var(--violet);overflow-x:hidden;}
+nav{background:var(--violet);padding:18px 60px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.nav-vg{font-size:28px;font-weight:800;color:var(--orange);letter-spacing:-0.02em;}
+.nav-wordmark{font-size:12px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--white2);}
+.nav-links{display:flex;align-items:center;gap:32px;}
+.nav-links a{font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.6);text-decoration:none;transition:color 0.2s;}
+.nav-links a:hover{color:var(--orange);}
+.nav-cta{padding:9px 22px;background:var(--orange);color:var(--violet);font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:all 0.2s;}
+.nav-cta:hover{background:var(--orange2);}
+.alert-banner{background:linear-gradient(135deg,#c0392b,#e74c3c);padding:14px 60px;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;}
+.alert-text{font-size:14px;font-weight:700;color:#fff;letter-spacing:0.02em;}
+.alert-date{background:rgba(255,255,255,0.2);padding:4px 12px;border-radius:2px;font-size:12px;font-weight:800;color:#fff;letter-spacing:0.1em;}
+.live-dot{width:8px;height:8px;border-radius:50%;background:#fff;animation:lp 1.5s infinite;display:inline-block;margin-right:6px;}
+@keyframes lp{0%,100%{opacity:1;}50%{opacity:0.3;}}
+.hero{background:var(--violet);padding:72px 60px 56px;position:relative;overflow:hidden;}
+.hero-octa{position:absolute;inset:0;opacity:0.05;pointer-events:none;}
+.hero-inner{max-width:840px;margin:0 auto;position:relative;z-index:2;}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(246,150,121,0.15);border:1px solid rgba(246,150,121,0.3);padding:5px 14px;border-radius:2px;margin-bottom:22px;font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--orange);}
+.hero h1{font-size:clamp(28px,3.8vw,50px);font-weight:800;line-height:1.1;color:#fff;margin-bottom:18px;letter-spacing:-0.02em;}
+.hero h1 em{color:var(--orange);font-style:normal;}
+.hero-meta{display:flex;gap:20px;flex-wrap:wrap;font-size:12px;font-weight:500;color:var(--gray);margin-bottom:28px;}
+.hero-excerpt{font-size:16px;font-weight:300;line-height:1.85;color:var(--white2);border-left:3px solid var(--orange);padding-left:18px;max-width:700px;}
+.stat-strip{background:var(--peach);padding:36px 60px;display:flex;justify-content:center;gap:0;flex-wrap:wrap;}
+.stat-item{flex:1;min-width:150px;text-align:center;padding:0 28px;border-right:1px solid rgba(40,36,49,0.12);}
+.stat-item:last-child{border-right:none;}
+.stat-val{font-size:38px;font-weight:800;color:var(--violet);line-height:1;margin-bottom:5px;letter-spacing:-0.02em;}
+.stat-val em{color:var(--orange);font-style:normal;font-size:26px;}
+.stat-lbl{font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--violet);opacity:0.65;}
+.article{max-width:780px;margin:0 auto;padding:64px 40px;}
+.article h2{font-size:24px;font-weight:800;color:var(--violet);margin:44px 0 14px;letter-spacing:-0.01em;padding-bottom:10px;border-bottom:2px solid var(--peach);}
+.article h3{font-size:17px;font-weight:700;color:var(--violet);margin:24px 0 8px;display:flex;align-items:center;gap:10px;}
+.article h3::before{content:'';width:14px;height:3px;background:var(--orange);flex-shrink:0;border-radius:2px;}
+.article p{font-size:16px;font-weight:400;line-height:1.85;color:#3d3850;margin-bottom:16px;}
+.article strong{color:var(--violet);font-weight:700;}
+.callout{background:var(--violet);color:#fff;padding:26px 30px;margin:28px 0;border-radius:3px;border-left:4px solid var(--orange);}
+.callout-label{font-size:9px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--orange);margin-bottom:8px;}
+.callout p{color:rgba(255,255,255,0.88);margin:0;font-size:16px;font-weight:400;line-height:1.7;}
+.calc-box{background:linear-gradient(135deg,var(--violet),var(--violet3));padding:28px;margin:28px 0;border-radius:3px;border:1px solid rgba(246,150,121,0.2);}
+.calc-title{font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--orange);margin-bottom:16px;}
+.calc-row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(255,255,255,0.07);font-size:14px;}
+.calc-row:last-child{border-bottom:none;border-top:2px solid var(--orange);padding-top:12px;margin-top:4px;}
+.calc-label{color:rgba(255,255,255,0.6);}
+.calc-val{color:#fff;font-weight:700;}
+.calc-val.hl{color:var(--orange);font-size:17px;}
+.step-list{list-style:none;margin:16px 0 24px;}
+.step-list li{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--peach);}
+.step-list li:last-child{border-bottom:none;}
+.step-num{width:30px;height:30px;border-radius:50%;background:var(--orange);color:var(--violet);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;flex-shrink:0;margin-top:2px;}
+.step-title{font-size:15px;font-weight:700;color:var(--violet);margin-bottom:3px;}
+.step-desc{font-size:13px;color:#5d5875;line-height:1.6;}
+.article-cta{background:var(--peach);padding:36px;margin:44px 0;border-radius:3px;text-align:center;}
+.article-cta h3{font-size:21px;font-weight:800;color:var(--violet);margin-bottom:8px;}
+.article-cta h3::before{display:none;}
+.article-cta p{font-size:14px;color:#5d5875;margin-bottom:20px;}
+.cta-btn{display:inline-block;padding:13px 34px;background:var(--violet);color:#fff;font-size:12px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:all 0.2s;}
+.cta-btn:hover{background:var(--orange);color:var(--violet);}
+footer{background:var(--violet);padding:40px 60px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;}
+.footer-vg{font-size:22px;font-weight:800;color:var(--orange);}
+.footer-wm{font-size:10px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:3px;}
+.footer-info{font-size:11px;color:rgba(255,255,255,0.4);line-height:2;text-align:right;}
+.footer-info a{color:var(--orange);text-decoration:none;}
+.footer-bottom{background:var(--violet2);border-top:1px solid rgba(255,255,255,0.05);padding:14px 60px;text-align:center;font-size:11px;color:rgba(255,255,255,0.2);letter-spacing:0.05em;}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity 0.65s,transform 0.65s;}
+.reveal.vis{opacity:1;transform:translateY(0);}
+@media(max-width:768px){
+  nav,.hero,.alert-banner,.stat-strip,footer,.footer-bottom{padding-left:20px;padding-right:20px;}
+  .article{padding:40px 20px;}
+  .nav-links{display:none;}
+  .stat-item{border-right:none;padding:14px 0;border-bottom:1px solid rgba(40,36,49,0.1);}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="https://vasogroup.com" class="nav-logo">
+    <div class="nav-vg">vg</div>
+    <div class="nav-wordmark">Vaso Group</div>
+  </a>
+  <div class="nav-links">
+    <a href="#">Amazon Strategy</a>
+    <a href="#">eCommerce Growth</a>
+    <a href="#">Brand Management</a>
+  </div>
+  <a href="https://vasogroup.com" class="nav-cta">Get a Consultation</a>
+</nav>
+
+<div class="alert-banner">
+  <span class="live-dot"></span>
+  <div class="alert-text">Amazon's 3.5% FBA Surcharge</div>
+  <div class="alert-date">Went Live April 17, 2026</div>
+  <div class="alert-text">— Here's Your Action Plan</div>
+</div>
+
+<section class="hero">
+  <svg class="hero-octa" viewBox="0 0 900 350" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <g stroke="#F69679" stroke-width="1" fill="none">
+      <polygon points="80,30 55,80 80,130 105,80"/><line x1="80" y1="30" x2="80" y2="130"/><line x1="55" y1="80" x2="105" y2="80"/>
+      <polygon points="220,15 190,70 220,125 250,70"/><line x1="220" y1="15" x2="220" y2="125"/><line x1="190" y1="70" x2="250" y2="70"/>
+      <polygon points="400,50 368,105 400,160 432,105"/><line x1="400" y1="50" x2="400" y2="160"/><line x1="368" y1="105" x2="432" y2="105"/>
+      <polygon points="580,20 550,70 580,120 610,70"/><line x1="580" y1="20" x2="580" y2="120"/><line x1="550" y1="70" x2="610" y2="70"/>
+      <polygon points="750,40 720,95 750,150 780,95"/><line x1="750" y1="40" x2="750" y2="150"/><line x1="720" y1="95" x2="780" y2="95"/>
+      <polygon points="860,10 835,55 860,100 885,55"/><line x1="860" y1="10" x2="860" y2="100"/><line x1="835" y1="55" x2="885" y2="55"/>
+      <polygon points="140,200 110,255 140,310 170,255"/><line x1="140" y1="200" x2="140" y2="310"/><line x1="110" y1="255" x2="170" y2="255"/>
+      <polygon points="480,210 450,265 480,320 510,265"/><line x1="480" y1="210" x2="480" y2="320"/><line x1="450" y1="265" x2="510" y2="265"/>
+      <polygon points="680,190 650,240 680,290 710,240"/><line x1="680" y1="190" x2="680" y2="290"/><line x1="650" y1="240" x2="710" y2="240"/>
+    </g>
+  </svg>
+  <div class="hero-inner">
+    <div class="hero-tag">● Amazon Strategy · April 17, 2026</div>
+    <h1>Amazon's <em>3.5% FBA Surcharge</em><br>Went Live on April 17th —<br>What Brand Manufacturers Must Do Now</h1>
+    <div class="hero-meta">
+      <span>VASO Group Editorial Team</span>
+      <span>·</span>
+      <span>April 17, 2026</span>
+      <span>·</span>
+      <span>5 min read</span>
+      <span>·</span>
+      <span>Amazon Strategy</span>
+    </div>
+    <div class="hero-excerpt">
+      Starting April 17, 2026, Amazon's 3.5% fuel and logistics surcharge went live across FBA in the US and Canada. At $0.17 per unit average, the math compounds fast at scale. Here's exactly what to do — and how to turn this moment into a competitive advantage.
+    </div>
+  </div>
+</section>
+
+<div class="stat-strip">
+  <div class="stat-item reveal"><div class="stat-val">3.5<em>%</em></div><div class="stat-lbl">Surcharge on FBA fees</div></div>
+  <div class="stat-item reveal"><div class="stat-val">$0.17</div><div class="stat-lbl">Per unit avg · US FBA</div></div>
+  <div class="stat-item reveal"><div class="stat-val">Apr <em>17</em></div><div class="stat-lbl">Went live · US & Canada</div></div>
+  <div class="stat-item reveal"><div class="stat-val">May <em>2</em></div><div class="stat-lbl">Buy with Prime + MCF</div></div>
+</div>
+
+<article class="article">
+
+  <h2>What Amazon Actually Said</h2>
+  <p>Amazon's 3.5% fuel and logistics surcharge <strong>went live on April 17, 2026</strong>, applying to Fulfillment by Amazon (FBA) in the US and Canada, and Remote Fulfillment with FBA into Canada, Mexico, and Brazil. Starting May 2, 2026, the surcharge extends to Buy with Prime and Multi-Channel Fulfillment (MCF).</p>
+  <p>On average, this equates to <strong>$0.17 per unit for US FBA</strong> and CAD $0.26 per unit for Canada FBA, varying by product size and dimensions. Amazon has updated their Revenue Calculator, Profit Analytics, and Fee and Economics Preview reports accordingly.</p>
+
+  <div class="callout reveal">
+    <div class="callout-label">VASO Group Perspective</div>
+    <p>Amazon explicitly stated this surcharge is meaningfully lower than what other major carriers are implementing. That's worth noting — but it doesn't change the math for your business. The time to plan was before April 17th. If you're reading this now, the time to act is today.</p>
+  </div>
+
+  <h2>Why This Matters More Than You Think</h2>
+  <p>At first glance, $0.17 per unit sounds manageable. Scale it across thousands of units per month and the picture changes fast.</p>
+
+  <div class="calc-box reveal">
+    <div class="calc-title">📊 Monthly Cost Exposure Calculator</div>
+    <div class="calc-row"><span class="calc-label">10,000 units/month</span><span class="calc-val">+$1,700/mo &nbsp;·&nbsp; $20,400/yr</span></div>
+    <div class="calc-row"><span class="calc-label">25,000 units/month</span><span class="calc-val">+$4,250/mo &nbsp;·&nbsp; $51,000/yr</span></div>
+    <div class="calc-row"><span class="calc-label">50,000 units/month</span><span class="calc-val">+$8,500/mo &nbsp;·&nbsp; $102,000/yr</span></div>
+    <div class="calc-row"><span class="calc-label">100,000 units/month</span><span class="calc-val hl">+$17,000/mo &nbsp;·&nbsp; $204,000/yr</span></div>
+  </div>
+
+  <p>This is not an attack on sellers — Amazon absorbed elevated logistics costs for some time before implementing this. But as of <strong>April 17th</strong>, your margin structure changed. Your strategy needs to adapt.</p>
+
+  <h2>5 Things Brand Manufacturers Should Do Right Now</h2>
+  <ul class="step-list">
+    <li>
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-title">Run Your Numbers in Amazon's Updated Tools</div>
+        <div class="step-desc">Log into Seller Central. Pull updated reports from the Revenue Calculator, Profit Analytics, and Fee and Economics Preview. Know your actual dollar exposure by ASIN before making any pricing decisions.</div>
+      </div>
+    </li>
+    <li>
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-title">Reassess Your Pricing Architecture</div>
+        <div class="step-desc">The surcharge applies to fulfillment fees — not your sale price — so margin gets compressed unless you adjust. Consider modest price increases on affected SKUs, bundling to improve per-unit economics, or shifting thin-margin items to FBM.</div>
+      </div>
+    </li>
+    <li>
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-title">Audit MCF and Buy with Prime Separately</div>
+        <div class="step-desc">The May 2 extension hits Multi-Channel Fulfillment and Buy with Prime. If Amazon fulfills your DTC site or other channels, that's a separate cost center that needs its own model before the deadline.</div>
+      </div>
+    </li>
+    <li>
+      <div class="step-num">4</div>
+      <div>
+        <div class="step-title">Protect Your Buy Box Position</div>
+        <div class="step-desc">Cost pressure triggers reactive pricing that hurts Buy Box win rate. Don't let margin pressure push you into pricing yourself out of the algorithm. Work with your account team to find the balance between margin defense and competitive positioning.</div>
+      </div>
+    </li>
+    <li>
+      <div class="step-num">5</div>
+      <div>
+        <div class="step-title">Turn This Into a Competitive Advantage</div>
+        <div class="step-desc">Smaller, undercapitalized sellers will overreact — raise prices aggressively, pull inventory, or lose Buy Box entirely. Brands with strong account management and data-driven strategy will hold position and gain market share while competitors scramble.</div>
+      </div>
+    </li>
+  </ul>
+
+  <h2>What VASO Group Is Doing for Our Clients</h2>
+  <p>At VASO Group, we updated every client model to reflect the April 17th surcharge before it went live. Our account management teams proactively reviewed each client's ASIN portfolio, modeled the per-unit impact, and built pricing and inventory strategies to absorb or offset the cost increase.</p>
+  <p>We've navigated every major Amazon fee change since 2017 — alongside <strong>Party City, Zebra Pen, Calista</strong>, and dozens of brand manufacturers. The playbook is proven. This is exactly the kind of moment where having a dedicated eCommerce partner pays for itself many times over.</p>
+
+  <div class="callout reveal">
+    <div class="callout-label">The Bottom Line</div>
+    <p>Amazon's 3.5% FBA surcharge went live April 17th. It's real, it affects your margins, and it's manageable — if you act now rather than react later. Run your numbers. Reassess your pricing. Protect your Buy Box. And if you want a partner who already built this into their client strategy, you know where to find us.</p>
+  </div>
+
+  <div class="article-cta reveal">
+    <h3>Ready to Model Your Exact Exposure?</h3>
+    <p>VASO Group's team has already built the April 17th surcharge into our client models. If you're managing this in-house and want expert eyes on it, we'd be glad to walk through it together.</p>
+    <a href="https://vasogroup.com" class="cta-btn">Request a Free Consultation →</a>
+  </div>
+
+</article>
+
+<footer>
+  <div>
+    <div class="footer-vg">vg</div>
+    <div class="footer-wm">Vaso Group</div>
+  </div>
+  <div class="footer-info">
+    Dallas, TX · Seattle, WA · Bentonville, AR<br>
+    <a href="https://vasogroup.com">vasogroup.com</a> · info@vasogroup.com · +1.214.416.0294
+  </div>
+</footer>
+<div class="footer-bottom">© 2026 VASO Group LLC · Value Added, Service Oriented · Amazon Ads Partner · All Rights Reserved</div>
+
+<script>
+const els=document.querySelectorAll('.reveal');
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('vis');}),{threshold:0.06});
+els.forEach(el=>io.observe(el));
+setTimeout(()=>document.querySelectorAll('.stat-strip .reveal').forEach(el=>el.classList.add('vis')),150);
+</script>
+</body>
+</html>
